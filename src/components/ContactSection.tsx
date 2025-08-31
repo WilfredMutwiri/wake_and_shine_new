@@ -134,7 +134,7 @@ Thank you for your time and dedication.`;
                   onClick={handleInfo}
                   className="flex-1 font-poppins"
                 >
-                    Join Us Today
+                    Learn more
                 </Button>
               </div>
             </div>

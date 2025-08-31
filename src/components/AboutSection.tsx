@@ -30,6 +30,16 @@ export const AboutSection = () => {
     }
   ];
 
+  const handleInfo = () => {
+    const phoneNo = "254706367677";
+    const message = `Hello Mr. Mutegi,
+I recently visited the Wake and Shine website and was truly impressed by the impactful initiatives your group is undertaking. I would greatly appreciate the opportunity to learn more about your programs and explore how I might engage with your work.
+Thank you for your time and dedication.`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNo}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <section id="about" className="section-padding bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -87,7 +97,7 @@ export const AboutSection = () => {
               </Card>
             </div>
 
-            <Button variant="cta" size="lg" className="group font-poppins">
+            <Button variant="cta" size="lg" className="group font-poppins" onClick={handleInfo}>
               Learn More About Our Work
               <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
             </Button>
