@@ -135,7 +135,7 @@ export const AchievementsSection = () => {
         <div className="space-y-8">
           <div className="text-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 font-playfair">
-              ~ Current & Upcoming Events ~
+              ~ Current & Upcoming Events
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto font-poppins">
               Stay updated with our latest initiatives and upcoming community events.
