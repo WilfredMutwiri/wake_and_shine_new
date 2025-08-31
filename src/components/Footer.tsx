@@ -1,8 +1,20 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Linkedin, MessageCircle, Twitter, Heart, MapPin, Phone, Mail } from "lucide-react";
+import logo from "@/assets/logo.webp";
 
 export const Footer = () => {
+
+    const handleInfo = () => {
+    const phoneNo = "254706367677";
+    const message = `Hello Mr. Mutegi,
+I recently visited the Wake and Shine website and was truly impressed by the impactful initiatives your group is undertaking. I would greatly appreciate the opportunity to learn more about your programs and explore how I might engage with your work.
+Thank you for your time and dedication.`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNo}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   const socialLinks = [
     {
       name: "Facebook",
@@ -55,7 +67,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-background border-t border-border">
+    <footer className="bg-background border-t border-border font-poppins">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-16">
@@ -64,11 +76,11 @@ export const Footer = () => {
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  W&S
+                  <img src={logo}/>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-foreground">Wake & Shine</h3>
-                  <p className="text-sm text-muted-foreground">Self Help Group</p>
+                  <h3 className="text-xl font-bold text-foreground font-poppins">Wake & Shine</h3>
+                  <p className="text-sm text-muted-foreground font-poppins">Self Help Group</p>
                 </div>
               </div>
               
@@ -84,11 +96,11 @@ export const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                   <Phone className="w-4 h-4 text-primary" />
-                  <span>+254 713 077 228</span>
+                  <span>+254 706 367 677 | +254 721 356 450</span>
                 </div>
                 <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                   <Mail className="w-4 h-4 text-primary" />
-                  <span>info@wakeandshineshg.org</span>
+                  <span>wakeandshineshg@gmail.com</span>
                 </div>
               </div>
               
@@ -108,8 +120,8 @@ export const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-6">Quick Links</h4>
-              <nav className="space-y-3">
+              <h4 className="text-lg font-semibold text-foreground mb-6 font-poppins">Quick Links</h4>
+              <nav className="space-y-3 font-poppins">
                 {quickLinks.map((link, index) => (
                   <a
                     key={index}
@@ -125,7 +137,7 @@ export const Footer = () => {
 
             {/* Programs */}
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-6">Our Programs</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-6 font-poppins">Our Programs</h4>
               <nav className="space-y-3">
                 {programs.map((program, index) => (
                   <a
@@ -142,11 +154,11 @@ export const Footer = () => {
 
             {/* Call to Action */}
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-6">Join Our Mission</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-6 font-poppins">Join Our Mission</h4>
               <Card className="p-6 bg-gradient-card shadow-custom-md">
                 <div className="text-center space-y-4">
                   <Heart className="w-8 h-8 text-primary mx-auto" />
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground font-poppins">
                     Be part of our community empowerment journey
                   </p>
                   <div className="space-y-3">
@@ -155,10 +167,8 @@ export const Footer = () => {
                         Join Us Today
                       </a>
                     </Button>
-                    <Button variant="outline" size="sm" className="w-full" asChild>
-                      <a href="https://forms.gle/JGpk1hRiXTvv5YGj6">
+                    <Button variant="outline" size="sm" onClick={handleInfo} className="w-full">
                         Become a Member
-                      </a>
                     </Button>
                   </div>
                 </div>
@@ -168,10 +178,10 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-border py-8">
+        <div className="border-t border-border py-8 font-poppins">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground font-poppins">
                 © {new Date().getFullYear()} Wake & Shine Self Help Group. All rights reserved.
               </p>
               <p className="text-xs text-muted-foreground mt-1">
