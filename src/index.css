@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Wake and Shine Modern Design System - Professional & Trustworthy */
+
+@layer base {
+  :root {
+    /* Brand Colors - Warm and Professional */
+    --background: 0 0% 100%;
+    --foreground: 220 26% 14%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 26% 14%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 26% 14%;
+    
+    /* Primary: Professional Orange - Energy & Empowerment */
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 24 100% 97%;
+    --primary-glow: 24 100% 60%;
+    
+    /* Secondary: Trust Blue - Stability & Community */
+    --secondary: 213 94% 68%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 213 94% 97%;
+    
+    /* Tertiary: Success Green - Growth & Achievement */
+    --tertiary: 142 71% 45%;
+    --tertiary-foreground: 0 0% 100%;
+    --tertiary-light: 142 71% 97%;
+    
+    /* Neutral Palette */
+    --muted: 220 13% 96%;
+    --muted-foreground: 220 9% 46%;
+    
+    --accent: 24 100% 97%;
+    --accent-foreground: 220 26% 14%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 24 100% 50%;
+    
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--accent)));
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px hsl(var(--primary) / 0.1);
+    --shadow-md: 0 4px 12px hsl(var(--primary) / 0.15);
+    --shadow-lg: 0 8px 25px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 20px hsl(var(--primary-glow) / 0.3);
+    
+    /* Typography */
+    --font-heading: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    
+    /* Spacing */
+    --section-padding: 5rem;
+    --container-padding: 2rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 26% 7%;
+    --foreground: 0 0% 98%;
+    
+    --card: 220 20% 10%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 220 20% 10%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 24 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 24 100% 15%;
+    
+    --secondary: 213 94% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 213 94% 15%;
+    
+    --tertiary: 142 71% 50%;
+    --tertiary-foreground: 0 0% 100%;
+    --tertiary-light: 142 71% 15%;
+    
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 65%;
+    
+    --accent: 220 20% 15%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: 24 100% 55%;
+    
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--accent)));
+    
+    --shadow-sm: 0 2px 4px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 8px 25px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 20px hsl(var(--primary-glow) / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-family: var(--font-body);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply tracking-tight;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Section spacing */
+  .section-padding {
+    padding: var(--section-padding) 0;
+  }
+  
+  .container-padding {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+  
+  /* Background patterns */
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  /* Text clamp utility */
+  .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
