@@ -1,11 +1,20 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Linkedin, MessageCircle, Twitter, Heart, MapPin, Phone, Mail } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  MessageCircle,
+  Twitter,
+  Heart,
+  MapPin,
+  Phone,
+  Mail,
+} from "lucide-react";
 import logo from "@/assets/logo.webp";
 
 export const Footer = () => {
-
-    const handleInfo = () => {
+  const handleInfo = () => {
     const phoneNo = "254706367677";
     const message = `Hello Mr. Mutegi,
 I recently visited the Wake and Shine website and was truly impressed by the impactful initiatives your group is undertaking. I would greatly appreciate the opportunity to learn more about your programs and explore how I might engage with your work.
@@ -20,32 +29,32 @@ Thank you for your time and dedication.`;
       name: "Facebook",
       icon: Facebook,
       url: "https://www.facebook.com/profile.php?id=100092473608381",
-      color: "hover:text-blue-600"
+      color: "hover:text-blue-600",
     },
     {
       name: "Instagram",
       icon: Instagram,
       url: "#",
-      color: "hover:text-pink-600"
+      color: "hover:text-pink-600",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
       url: "#",
-      color: "hover:text-blue-700"
+      color: "hover:text-blue-700",
     },
     {
       name: "WhatsApp",
       icon: MessageCircle,
       url: "#",
-      color: "hover:text-green-600"
+      color: "hover:text-green-600",
     },
     {
       name: "Twitter",
       icon: Twitter,
       url: "#",
-      color: "hover:text-blue-400"
-    }
+      color: "hover:text-blue-400",
+    },
   ];
 
   const quickLinks = [
@@ -54,7 +63,7 @@ Thank you for your time and dedication.`;
     { name: "Achievements", href: "#achievements" },
     { name: "Our Team", href: "#team" },
     { name: "Blog", href: "#blog" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "#contact" },
   ];
 
   const programs = [
@@ -63,7 +72,7 @@ Thank you for your time and dedication.`;
     { name: "Finance & Investment", href: "#services" },
     { name: "Climate Change", href: "#services" },
     { name: "Youth Leadership", href: "#achievements" },
-    { name: "Child Protection", href: "#achievements" }
+    { name: "Child Protection", href: "#achievements" },
   ];
 
   return (
@@ -76,19 +85,23 @@ Thank you for your time and dedication.`;
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  <img src={logo}/>
+                  <img src={logo} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-foreground font-poppins">Wake & Shine</h3>
-                  <p className="text-sm text-muted-foreground font-poppins">Self Help Group</p>
+                  <h3 className="text-xl font-bold text-foreground font-poppins">
+                    Wake & Shine
+                  </h3>
+                  <p className="text-sm text-muted-foreground font-poppins">
+                    Self Help Group
+                  </p>
                 </div>
               </div>
-              
+
               <p className="text-muted-foreground leading-relaxed">
-                Empowering communities in Tharaka Nithi County through youth development, 
-                education, and sustainable initiatives since 2013.
+                Empowering communities in Tharaka Nithi County through youth
+                development, education, and sustainable initiatives since 2013.
               </p>
-              
+
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-sm text-muted-foreground">
                   <MapPin className="w-4 h-4 text-primary" />
@@ -103,7 +116,7 @@ Thank you for your time and dedication.`;
                   <span>wakeandshineshg@gmail.com</span>
                 </div>
               </div>
-              
+
               <div className="flex space-x-3">
                 {socialLinks.map((social, index) => (
                   <a
@@ -120,7 +133,9 @@ Thank you for your time and dedication.`;
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-6 font-poppins">Quick Links</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-6 font-poppins">
+                Quick Links
+              </h4>
               <nav className="space-y-3 font-poppins">
                 {quickLinks.map((link, index) => (
                   <a
@@ -137,7 +152,9 @@ Thank you for your time and dedication.`;
 
             {/* Programs */}
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-6 font-poppins">Our Programs</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-6 font-poppins">
+                Our Programs
+              </h4>
               <nav className="space-y-3">
                 {programs.map((program, index) => (
                   <a
@@ -154,7 +171,9 @@ Thank you for your time and dedication.`;
 
             {/* Call to Action */}
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-6 font-poppins">Join Our Mission</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-6 font-poppins">
+                Join Our Mission
+              </h4>
               <Card className="p-6 bg-gradient-card shadow-custom-md">
                 <div className="text-center space-y-4">
                   <Heart className="w-8 h-8 text-primary mx-auto" />
@@ -167,8 +186,13 @@ Thank you for your time and dedication.`;
                         Join Us Today
                       </a>
                     </Button>
-                    <Button variant="outline" size="sm" onClick={handleInfo} className="w-full">
-                        Become a Member
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={handleInfo}
+                      className="w-full"
+                    >
+                      Become a Member
                     </Button>
                   </div>
                 </div>
@@ -182,21 +206,42 @@ Thank you for your time and dedication.`;
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
               <p className="text-sm text-muted-foreground font-poppins">
-                © {new Date().getFullYear()} Wake & Shine Self Help Group. All rights reserved.
+                © {new Date().getFullYear()} Wake & Shine Self Help Group. All
+                rights reserved.
               </p>
               <p className="text-xs text-muted-foreground mt-1">
-                Registration No: THA/DSS/SH/4163 | Ministry of Social Services, Gender and Social Protection
+                Registration No: THA/DSS/SH/4163 | Ministry of Social Services,
+                Gender and Social Protection
+              </p>
+              <p className="text-sm mt-4">
+                developed by{" "}
+                <a
+                  className={`p-2 bg-muted text-cyan-700 transition-all duration-300 hover:text-primary transform hover:-translate-y-1 border-b-2`}
+                  href="https://wilfredmutwiri.vercel.app/"
+                  target="_blank"
+                >
+                  Wilfred Mutwiri
+                </a>
               </p>
             </div>
-            
+
             <div className="flex items-center space-x-6 text-sm">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Privacy Policy
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Terms of Service
               </a>
-              <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+              <a
+                href="#contact"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Contact
               </a>
             </div>
