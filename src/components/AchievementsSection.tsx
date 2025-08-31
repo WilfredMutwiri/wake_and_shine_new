@@ -118,7 +118,7 @@ export const AchievementsSection = () => {
               
               <CardHeader>
                 <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors font-poppins">
-                  ~ {achievement.title} ~
+                  ~ {achievement.title}
                 </CardTitle>
               </CardHeader>
               
