@@ -72,16 +72,16 @@ export const TeamSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Meet Our Team
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 font-playfair">
+            ~ Meet Our Team ~
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-poppins">
             Our dedicated leaders and members working together to empower communities and create lasting change.
           </p>
         </div>
 
         {/* Team Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12 font-poppins">
           {teamMembers.map((member, index) => (
             <Card key={index} className="group shadow-custom-md hover:shadow-custom-lg transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
@@ -98,11 +98,11 @@ export const TeamSection = () => {
                 </div>
               </div>
               
-              <CardContent className="p-6">
-                <h3 className="font-semibold text-foreground mb-1 group-hover:text-primary transition-colors">
+              <CardContent className="p-6 font-poppins">
+                <h3 className="font-semibold text-foreground mb-1 group-hover:text-primary transition-colors font-poppins">
                   {member.name}
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4">{member.position}</p>
+                <p className="text-sm text-muted-foreground mb-4 font-poppins">{member.position}</p>
                 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-sm text-muted-foreground">
@@ -121,16 +121,16 @@ export const TeamSection = () => {
             <CardContent className="p-8">
               <div className="text-center mb-6">
                 <Users className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-foreground mb-2">Member Testimonial</h3>
-                <p className="text-sm text-muted-foreground">Joel Munene - Treasurer</p>
+                <h3 className="text-2xl font-semibold text-foreground mb-2 font-poppins">Member Testimonial</h3>
+                <p className="text-sm text-muted-foreground font-poppins">Joel Munene - Treasurer</p>
               </div>
               
-              <blockquote className="text-lg text-foreground leading-relaxed text-center italic mb-6">
+              <blockquote className="text-md text-foreground leading-relaxed text-center italic mb-6 font-merriweather">
                 "As Wake and Shine SHG, we believe in empowering our members towards becoming financially independent through various financial activities such as: group savings, individual savings, investment in high potential projects; both at individual and group level and educating our members on financial literacy and discipline. In addition, we do mobilize members as well as the community to use the freely available natural resources in an environmental friendly manner in income generation activities. These have been our backbone towards achieving our main goal as an organization and we aim at offering reliable financial solutions to our members and society at large."
               </blockquote>
               
               <div className="text-center">
-                <Button variant="cta" size="lg" asChild>
+                <Button variant="cta" className="font-poppins" size="lg" asChild>
                   <a href="https://wakeandshineshg.netlify.app/memberhip">
                     Learn About Membership
                     <ArrowRight className="w-5 h-5 ml-2" />
@@ -142,9 +142,9 @@ export const TeamSection = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 font-poppins">
           <div className="max-w-2xl mx-auto">
-            <h3 className="text-2xl font-semibold text-foreground mb-4">
+            <h3 className="text-2xl font-semibold text-foreground mb-4 font-playfair">
               We are a full family!
             </h3>
             <p className="text-muted-foreground mb-6">
