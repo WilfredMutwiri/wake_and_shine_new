@@ -103,7 +103,7 @@ export const AboutSection = () => {
                       <stat.icon className="w-8 h-8 text-primary" />
                     </div>
                     <h4 className="font-semibold text-foreground mb-1 font-poppins">{stat.title}</h4>
-                    <div className="text-2xl font-bold text-primary mb-1">{stat.value}</div>
+                    <div className="text-xl md:text-2xl font-bold text-primary mb-1">{stat.value}</div>
                     <p className="text-sm text-muted-foreground">{stat.description}</p>
                   </CardContent>
                 </Card>
