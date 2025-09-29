@@ -6,7 +6,7 @@ import meeting1 from "@/assets/meeting1.webp";
 import games from "@/assets/games.webp";
 import meeting2 from "@/assets/meeting2.webp";
 import games2 from "@/assets/games2.webp";
-import meeting3 from "@/assets/meeting3.webp";
+import meeting3 from "@/assets/meeting3.jpeg";
 
 
 export const AchievementsSection = () => {

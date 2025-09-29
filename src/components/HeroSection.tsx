@@ -2,17 +2,18 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Target, Heart, Leaf, BookOpen } from "lucide-react"; 
 
 // images
-import meeting from "@/assets/meeting1.webp";
-import group from "@/assets/group.webp";
+import meeting3n from "@/assets/meeting3.jpeg";
+import meeting1 from "@/assets/meeting1.jpeg";
 import meeting2 from "@/assets/meeting2.webp";
 import meeting3 from "@/assets/meeting3.webp";
-import hands from "@/assets/hands.webp";
+import meeting2n from "@/assets/meeting2.jpeg";
+import kids from "@/assets/Kids.jpeg";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export const HeroSection = () => {
-  const images = [group,meeting,meeting2,meeting3,hands];
+  const images = [meeting1,meeting3n,kids,meeting3,meeting2n,meeting2];
 
   return (
     <section

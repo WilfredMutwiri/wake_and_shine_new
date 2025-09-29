@@ -2,12 +2,22 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { User, Users, DollarSign, Leaf, ArrowRight } from "lucide-react";
 import meeting3 from "@/assets/meeting3.webp";
-import games2 from "@/assets/games2.webp";
 import meeting1 from "@/assets/meeting1.webp";
 import planting from "@/assets/planting.webp";
+import school from "@/assets/school3.jpeg";
+import school2 from "@/assets/school1.jpeg";
+import meeting2 from "@/assets/meeting2.jpeg";
 
 export const ServicesSection = () => {
   const services = [
+    {
+      icon: User,
+      title: "~ Girl Child Empowerment ~",
+      image: school,
+      description:
+        "At Wake and Shine, we are committed to empowering the girl child by providing education and awareness on early marriages, sexual health, and teenage pregnancies. Through mentorship and guidance, we equip young girls with knowledge and confidence to make informed choices, achieve their dreams, and positively impact their communities.",
+      color: "primary",
+    },
     {
       icon: User,
       title: "~ Self-Empowerment ~",
@@ -19,7 +29,7 @@ export const ServicesSection = () => {
     {
       icon: Users,
       title: "~ Community Empowerment ~",
-      image: games2,
+      image: meeting2,
       description:
         "Welcome to a community where empowerment is not just a word; it's a collective force that propels us to new heights. At Wake and Shine, we believe in the extraordinary impact of united strength. We believe and support collective community development for a conducive environment for individual and group growth.",
       color: "secondary",
@@ -30,6 +40,14 @@ export const ServicesSection = () => {
       image: meeting1,
       description:
         "Welcome to Wake and Shine finance hub, where we demystify finance and unlock the doors to wealth creation. Dive into a world of smart decisions, strategic investments, and financial empowerment. We embrace economically viable investment as a driver towards sustainable development.",
+      color: "secondary",
+    },
+    {
+      icon: User,
+      title: "~ School Outreach & Mentorship Program ~",
+      image: school2,
+      description:
+        "Our School Outreach & Mentorship Program is dedicated to guiding young teenagers toward a brighter future. We visit schools to educate students on critical health matters, including sexual and reproductive education, while also offering academic mentorship. Through interactive sessions, we empower learners with knowledge, study skills, and career guidance to help them make informed choices, avoid harmful practices, and stay focused on achieving their goals.",
       color: "tertiary",
     },
     {
@@ -38,7 +56,7 @@ export const ServicesSection = () => {
       image: planting,
       description:
         "We believe in nature and the entire ecosystem as a component to spur sustainable development. As in our vision, we endeavor to ensure not only the members but also the community at large has the required knowledge on sustainable use of natural resources while conserving the environment to support economic growth.",
-      color: "primary",
+      color: "tertiary",
     },
   ];
 
