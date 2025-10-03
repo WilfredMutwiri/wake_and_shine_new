@@ -7,6 +7,8 @@ import sharon from "@/assets/sharon.jpeg";
 import Aaron from "@/assets/Aaron.jpeg";
 import Abraham from "@/assets/Abraham.jpeg";
 import Ayub from "@/assets/Ayub.png";
+import Wilfred from "@/assets/wilfred.jpg";
+
 
 export const TeamSection = () => {
   const teamMembers = [
@@ -108,6 +110,12 @@ export const TeamSection = () => {
       position: "Junior Member",
       phone: "0717996838",
       image:Ayub,
+    },
+      {
+      name: "Wilfred Mutwiri.",
+      position: "Junior Member",
+      phone: "0745567568",
+      image:Wilfred,
     },
   ];
 
