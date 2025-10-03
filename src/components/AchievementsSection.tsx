@@ -48,7 +48,7 @@ export const AchievementsSection = () => {
   const events = [
     {
       title: "Confederations Cup at Uturini",
-      date: "27th December 2026",
+      date: "27th December 2025",
       status: "upcoming",
       image:games2
     },

@@ -2,6 +2,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight, Users } from "lucide-react";
 import AliceImg from "@/assets/Alice.jpeg";
+import Bernald from "@/assets/bernald.jpeg";
+import sharon from "@/assets/sharon.jpeg";
+import Aaron from "@/assets/Aaron.jpeg";
+import Abraham from "@/assets/Abraham.jpeg";
+import Ayub from "@/assets/Ayub.png";
 
 export const TeamSection = () => {
   const teamMembers = [
@@ -73,6 +78,36 @@ export const TeamSection = () => {
       position: "Junior Coordinator",
       phone: "",
       image:AliceImg,
+    },
+    {
+      name: "Benard Mambo Nyaga",
+      position: "Junior Member",
+      phone: "0795045885/0724838686",
+      image:Bernald,
+    },
+    {
+      name: "Sharon Kawira Alex",
+      position: "Junior Member",
+      phone: "0729284188",
+      image:sharon,
+    },
+    {
+      name: "Aaron Mwiti Mbogo",
+      position: "Junior Member",
+      phone: "0768390764",
+      image:Aaron,
+    },
+    {
+      name: "Abraham bundi nthiga",
+      position: "Junior Member",
+      phone: "0797178670",
+      image:Abraham,
+    },
+    {
+      name: "AYUB MURIMI MAGOJI.",
+      position: "Junior Member",
+      phone: "0717996838",
+      image:Ayub,
     },
   ];
 
