@@ -199,6 +199,21 @@ Thank you for your time and dedication.`;
           ))}
         </div>
 
+        {/* view all team members */}
+        <div>
+          <div className="text-center mb-12">
+            <Button variant="link" size="lg" asChild>
+              <a
+                href="/members"
+                className="inline-flex items-center text-lg font-medium text-primary hover:underline font-poppins"
+              >
+                View All Team Members
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
+            </Button>
+          </div>
+        </div>
+
         {/* Testimonial */}
         <div className="max-w-4xl mx-auto">
           <Card className="shadow-custom-lg bg-gradient-card">
@@ -257,7 +272,7 @@ Thank you for your time and dedication.`;
                 <a href="#contact">Contact Our Team</a>
               </Button>
               <Button variant="secondary" size="lg" asChild>
-                <a href="#">View All Members</a>
+                <a href="/members">View All Members</a>
               </Button>
             </div>
           </div>

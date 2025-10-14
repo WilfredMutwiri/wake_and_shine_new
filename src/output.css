@@ -1806,6 +1806,10 @@ html {
   border-bottom-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-l {
   border-left-width: 1px;
 }
@@ -3998,14 +4002,14 @@ html {
     text-align: left;
   }
 
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:opacity-0 {

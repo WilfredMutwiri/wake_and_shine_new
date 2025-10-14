@@ -76,7 +76,7 @@ export const AchievementsSection = () => {
   };
 
   return (
-    <section id="achievements" className="section-padding bg-background">
+    <section id="achievements" className="section-padding bg-background mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
