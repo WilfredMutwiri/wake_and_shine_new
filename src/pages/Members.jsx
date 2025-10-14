@@ -243,7 +243,7 @@ export const Members = () => {
     <div className="section-padding bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in mt-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 font-playfair">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6 font-playfair">
             ~ Meet Exteem Members ~
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-poppins">
